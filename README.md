@@ -30,12 +30,12 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 **HTTPS**
 ```
-git clone https://github.com/Lucas98Fernando/vue3-vite-ts-pinia-boilerplate.git
+git clone https://github.com/wadizaatour/Vue3Tailwind
 ```
 
 **SSH**
 ```
-git clone git@github.com:Lucas98Fernando/vue3-vite-ts-pinia-boilerplate.git
+git clone https://github.com/wadizaatour/Vue3Tailwind
 ```
 
 ### :two: Install dependencies
