@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   //Step 1 import component using @ <== alias configured in Vite
-  import PrimaryButtonComponent from "@/components/PrimaryButtonComponent.vue";
+  import ButtonComponent from "@/components/ButtonComponent.vue";
   import { onMounted } from "vue";
   import { buttons } from "@/services/buttons";
 
@@ -12,7 +12,7 @@
 <script lang="ts">
   export default {
     components: {
-      PrimaryButtonComponent: PrimaryButtonComponent,
+      ButtonComponent: ButtonComponent,
     },
   };
 </script>
@@ -20,11 +20,9 @@
   <div>
     <h4 class="font-bold">Dynamic components</h4>
     <!-- step 2  is refer to the actual component to render -->
-    <div class="space-x-5">
-      <component :is="PrimaryButtonComponent" size="small"></component>
-      <component :is="PrimaryButtonComponent" size="default"></component>
-      <component :is="PrimaryButtonComponent" size="large"></component>
-    </div>
+    <!-- <div class="space-x-5">
+      <component :is="ButtonComponent" size="small" value="Button"></component>
+    </div> -->
     <div class="space-x-5 m-1">
       <component
         :is="button.name"
@@ -32,8 +30,9 @@
         :id="button.id"
         :key="button.id"
         :size="button.size"
+        :events="button.events"
+        :value="`button ${button.size}`"
       ></component>
     </div>
-    <!-- <PrimaryButtonComponent size="default" /> -->
   </div>
 </template>

@@ -68,15 +68,6 @@
       imageUrl:
         "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
     },
-    {
-      name: "Wadi zaatour",
-      title: "Lead frontend engineer",
-      role: "Admin",
-      email: "wadizaatour@example.com",
-      telephone: "+1-202-555-0170",
-      imageUrl:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
-    },
 
     // More people...
   ];
@@ -88,7 +79,7 @@
 <script>
   const vMyDirective = {
     beforeMount: () => {
-      // console.log("Hello from before mount");
+      console.log("Hello from before mount");
     },
   };
 </script>

@@ -11,8 +11,6 @@
 
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">Hello cow manager</h1>
-    <h4 class="font-bold">Tailwind reservation</h4>
     <calendar></calendar>
   </div>
 </template>

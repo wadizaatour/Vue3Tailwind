@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-  import { InputType, inputStyle } from "@/services/inputs";
+  import { InputType, defaultInputStyle } from "@/services/inputs";
+
   defineProps({
     typeInput: {
       type: String,
@@ -9,5 +10,5 @@
 </script>
 <template>
   <slot />
-  <input :type="InputType[typeInput]" :class="inputStyle" />
+  <input :type="InputType[typeInput]" :class="defaultInputStyle" />
 </template>

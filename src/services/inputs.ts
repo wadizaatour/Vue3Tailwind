@@ -6,5 +6,5 @@ export const InputType: Record<InputType, string> = {
   password: "password",
 };
 
-export const inputStyle =
+export const defaultInputStyle =
   "block w-full h-10 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm";

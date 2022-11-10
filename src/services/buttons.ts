@@ -2,17 +2,17 @@
 export const buttons: Array<object> = [
   {
     id: "small-button",
-    name: "PrimaryButtonComponent",
+    name: "ButtonComponent",
     size: "small",
   },
   {
     id: "default-button",
-    name: "PrimaryButtonComponent",
+    name: "ButtonComponent",
     size: "default",
   },
   {
     id: "large-button",
-    name: "PrimaryButtonComponent",
+    name: "ButtonComponent",
     size: "large",
   },
 ];

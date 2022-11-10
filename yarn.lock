@@ -1028,9 +1028,9 @@
   "version" "3.2.39"
 
 "@vue/test-utils@^2.0.0-rc.17":
-  "integrity" "sha512-E2P4oXSaWDqTZNbmKZFVLrNN/siVN78YkEqs7pHryWerrlZR9bBFLWdJwRoguX45Ru6HxIflzKl4vQvwRMwm5g=="
-  "resolved" "https://registry.npmjs.org/@vue/test-utils/-/test-utils-2.0.2.tgz"
-  "version" "2.0.2"
+  "integrity" "sha512-7LHZKsFRV/HqDoMVY+cJamFzgHgsrmQFalROHC5FMWrzPzd+utG5e11krj1tVsnxYufGA2ABShX4nlcHXED+zQ=="
+  "resolved" "https://registry.npmjs.org/@vue/test-utils/-/test-utils-2.0.0-rc.17.tgz"
+  "version" "2.0.0-rc.17"
 
 "@vue/vue3-jest@^27.0.0-alpha.4":
   "integrity" "sha512-VL61CgZBoQqayXfzlZJHHpZuX4lsT8dmdZMJzADhdAJjKu26JBpypHr/2ppevxItljPiuALQW4MKhhCXZRXnLg=="

@@ -1,10 +1,12 @@
 import { mount } from "@vue/test-utils";
-// import Hello from "../../src/components/Hello.vue";
+import ButtonComponent from "@/components/ButtonComponent.vue";
 
-// describe("Hello", () => {
-//   it("check if prop msg match", () => {
-//     const msg = "I'm a example component with composition API";
-//     const wrapper = mount(Hello, { props: { msg } });
-//     expect(wrapper.text()).toMatch(msg);
-//   });
-// });
+test("trigger", async () => {
+  const wrapper = mount(ButtonComponent);
+
+  // trigger the element
+  await wrapper.find("button").trigger("click");
+
+  // assert some action has been performed, like an emitted event.
+  expect(wrapper.emitted()).toHaveProperty("submit");
+});

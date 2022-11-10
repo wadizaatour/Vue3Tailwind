@@ -1,6 +1,7 @@
 <script lang="ts" setup>
   import * as Form from "@/services/form-components";
   import { InputType } from "@/services/inputs";
+  import ButtonComponent from "@/components/ButtonComponent.vue";
 </script>
 
 <template>
@@ -14,5 +15,6 @@
     <Form.Input :type-input="InputType.password">
       <Form.Label>Password</Form.Label>
     </Form.Input>
+    <button-component class="m-2"> test </button-component>
   </div>
 </template>

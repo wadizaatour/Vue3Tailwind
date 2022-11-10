@@ -189,6 +189,7 @@
     MapPinIcon,
   } from "@heroicons/vue/20/solid";
   import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
+
   function addEvent() {
     console.log("event is added");
   }
