@@ -1,5 +1,5 @@
 <template>
-     <h1 v-my-directive>This is a before mount</h1>
+  <h1 v-my-directive>This is a before mount</h1>
 
   <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     <li
@@ -42,7 +42,11 @@
               :href="`tel:${person.telephone}`"
               class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
             >
-              <PhoneIcon class="h-5 w-5 text-gray-400"  aria-hidden="true" @click="showHello" />
+              <PhoneIcon
+                class="h-5 w-5 text-gray-400"
+                aria-hidden="true"
+                @click="showHello"
+              />
               <span class="ml-3">Call</span>
             </a>
           </div>
@@ -51,7 +55,6 @@
     </li>
   </ul>
 </template>
-
 
 <script setup>
   import { EnvelopeIcon, PhoneIcon } from "@heroicons/vue/20/solid";
@@ -74,64 +77,18 @@
       imageUrl:
         "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
     },
-    {
-      name: "Wadi zaatour",
-      title: "Lead frontend engineer",
-      role: "Admin",
-      email: "wadizaatour@example.com",
-      telephone: "+1-202-555-0170",
-      imageUrl:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
-    },
-    {
-      name: "Wadi zaatour",
-      title: "Lead frontend engineer",
-      role: "Admin",
-      email: "wadizaatour@example.com",
-      telephone: "+1-202-555-0170",
-      imageUrl:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
-    },
-    {
-      name: "Wadi zaatour",
-      title: "Lead frontend engineer",
-      role: "Admin",
-      email: "wadizaatour@example.com",
-      telephone: "+1-202-555-0170",
-      imageUrl:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
-    },
-    {
-      name: "Wadi zaatour",
-      title: "Lead frontend engineer",
-      role: "Admin",
-      email: "wadizaatour@example.com",
-      telephone: "+1-202-555-0170",
-      imageUrl:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
-    },
-    {
-      name: "Wadi zaatour",
-      title: "Lead frontend engineer",
-      role: "Admin",
-      email: "wadizaatour@example.com",
-      telephone: "+1-202-555-0170",
-      imageUrl:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFToD7hLeGSgg/profile-displayphoto-shrink_800_800/0/1559116396480?e=2147483647&v=beta&t=W-5ydwEk9msHFVSQN2JSoX0oKpKUiO9XIyzdGWn6bkI",
-    },
+
     // More people...
   ];
   function showHello() {
-    console.log('hello');
+    console.log("hello");
   }
- 
 </script>
 
 <script>
-const vMyDirective = {
-  beforeMount: () => {
-    console.log('Hello from before mount')
-  }
-}
- 
+  const vMyDirective = {
+    beforeMount: () => {
+      // console.log("Hello from before mount");
+    },
+  };
 </script>

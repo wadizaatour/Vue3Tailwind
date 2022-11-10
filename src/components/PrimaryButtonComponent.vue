@@ -1,3 +1,20 @@
+<script lang="ts" setup>
+  import { defaultButton } from "@/services/buttons";
+  type Size = "small" | "default" | "large";
+  defineProps({
+    size: {
+      type: String,
+      default: "default",
+    },
+  });
+
+  //Record to define object in typescript
+  const sizeStyle: Record<Size, string> = {
+    small: `h-8 w-22 bg-red-600  ${defaultButton}`,
+    default: `h-12 w-22  bg-indigo-600 ${defaultButton}`,
+    large: `h-16 w-22 bg-blue-600 ${defaultButton}`,
+  };
+</script>
 <template>
-  <button type="button" class="inline-flex items-center rounded border border-transparent bg-indigo-600 px-2.5 py-1.5 text-xs font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Button text</button>
+  <button type="button" :class="sizeStyle[size]">Button {{ size }}</button>
 </template>
