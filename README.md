@@ -1,4 +1,4 @@
-# Boilterplate Vue 3 + Typescript + Vite + Pinia
+# Boilterplate Vue 3 + Typescript + Vite + Pinia + TailwindUI/Css
 
 This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
@@ -30,12 +30,12 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 **HTTPS**
 ```
-git clone https://github.com/Lucas98Fernando/vue3-vite-ts-pinia-boilerplate.git
+git clone https://github.com/wadizaatour/Vue3Tailwind
 ```
 
 **SSH**
 ```
-git clone git@github.com:Lucas98Fernando/vue3-vite-ts-pinia-boilerplate.git
+git clone https://github.com/wadizaatour/Vue3Tailwind
 ```
 
 ### :two: Install dependencies
